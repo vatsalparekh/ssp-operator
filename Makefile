@@ -15,12 +15,12 @@ endif
 BUNDLE_METADATA_OPTS ?= $(BUNDLE_CHANNELS) $(BUNDLE_DEFAULT_CHANNEL)
 
 # Image URL to use all building/pushing image targets
-IMG_REPOSITORY ?= quay.io/kubevirt/ssp-operator
+IMG_REPOSITORY ?= quay.io/vparekh/ssp-operator
 IMG_TAG ?= latest
 IMG ?= ${IMG_REPOSITORY}:${IMG_TAG}
 
 # Image URL variables for template-validator
-VALIDATOR_REPOSITORY ?= quay.io/kubevirt/kubevirt-template-validator
+VALIDATOR_REPOSITORY ?= quay.io/vparekh/kubevirt-template-validator
 VALIDATOR_IMG_TAG ?= latest
 VALIDATOR_IMG ?= ${VALIDATOR_REPOSITORY}:${VALIDATOR_IMG_TAG}
 
